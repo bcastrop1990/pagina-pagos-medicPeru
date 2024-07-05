@@ -1,25 +1,11 @@
+import { AppRouter } from "./router/AppRouter"
 
-import '@stripe/react-stripe-js'
-import { Elements, CardElement } from '@stripe/react-stripe-js';
-import { loadStripe } from '@stripe/stripe-js';
-import './App.tsx';
-
-const stripePromise = loadStripe("pk_test_Nk0cGvjGlp2HwLvbXf8nZsN4");
-
-const CheckoutForm = () => {
+const App = () => {
   return (
-    <form>
-      <CardElement />
-    </form>
-  );
-};
-
-function App() {
-  return (
-    <Elements stripe={stripePromise}>
-      <CheckoutForm />
-    </Elements>
-  );
+    <>
+      <AppRouter />
+    </>
+  )
 }
 
-export default App;
+export default App
