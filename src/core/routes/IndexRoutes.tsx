@@ -10,16 +10,16 @@ const IndexRoutes = () => {
   return (
       <Routes>
         <Route element={<IndexLayout/>}>
-          <Route path="/"element={
+          <Route path="/historial"element={
             <Suspense fallback="Cargando...">
               <AppointmentHistoryPage/>
             </Suspense>
-          }index/>
+          }/>
           <Route path="/pendientes"element={
             <Suspense fallback="Cargando...">
               <PendingApointmentsPages/>
             </Suspense>
-          }/>
+          }index/>
           <Route path="/perfil"element={
             <Suspense fallback="Cargando...">
               <ProfilePage/>
