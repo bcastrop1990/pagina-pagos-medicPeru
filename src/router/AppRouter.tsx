@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { AuthRoutes } from '../auth/routes/AuthRoutes'
 import  IndexRoutes  from '../core/routes/IndexRoutes'
 
